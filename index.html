@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrucciones de Pago</title>
+  
+  <!-- Agregar fuente Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Enlace a CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- CDN de particles.js para fondo de partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+</head>
+<body>
+  <!-- Fondo con partículas -->
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <!-- Logo en la parte superior -->
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+    </div>
+
+    <h1 class="title">Instrucciones para Realizar Tu Pago</h1>
+    
+    <ol class="instructions">
+      <li>Inicia sesión en tu aplicación bancaria.</li>
+      <li>Selecciona la opción de "Pagos con QR".</li>
+      <li>Escanea el código QR que te proporcionamos.</li>
+      <li>Verifica los detalles del pago y confirma la transacción.</li>
+      <li>Guarda el comprobante de pago para tus registros.</li>
+    </ol>
+
+    <div class="payment-process">
+      <h3>Proceso de Pago</h3>
+      <div class="process-steps">
+        <div id="step1" class="step">1. Escanear QR</div>
+        <div id="step2" class="step">2. Subir Comprobante</div>
+      </div>
+    </div>
+
+    <button id="openModalBtn" class="button">Ver Código QR</button>
+    <button id="uploadBtn" class="button" style="display: none;">Subir Comprobante</button>
+
+    <!-- Mensaje de éxito -->
+    <div id="successMessage" class="success-message" style="display: none;">
+      ¡Pago realizado con éxito! Gracias por tu transacción.
+    </div>
+
+    <!-- Barra de progreso -->
+    <div id="progressBarContainer" class="progress-bar-container" style="display: none;">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="closeModalBtn" class="close-btn">X</button>
+        <img id="qrImage" src="qr.png" alt="Código QR para realizar el pago" class="qr-image">
+        <a href="qr.png" download="codigo-qr-pago.png" class="download-link">Descargar el Código QR</a>
+        <button id="simularPagoBtn" class="button">Simular Pago Realizado</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enlace a archivo JS -->
+  <script src="script.js"></script>
+</body>
+</html>
