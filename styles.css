@@ -1,0 +1,204 @@
+/* General Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    overflow: hidden;
+  }
+  
+  /* Fondo con partículas */
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f7f7f7;
+    z-index: -1;
+  }
+  
+  /* Estilo para la caja central */
+  .container {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px); /* Efecto de desenfoque más visible */
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Estilo del logo */
+  .logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo de título */
+  .title {
+    text-align: center;
+    color: #ffffff; /* Color vibrante */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  /* Lista de instrucciones */
+  .instructions {
+    list-style-position: inside;
+    padding-left: 20px;
+    color: #f0f0f0;
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  /* Barra de pasos */
+  .payment-process {
+    margin-top: 20px;
+  }
+  
+  .process-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .step {
+    font-size: 0.9em;
+    color: #cccccc;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+  }
+  
+  .step.active {
+    font-weight: bold;
+    color: #FF6600; /* Color vibrante */
+  }
+  
+  .step.completed {
+    color: #10b981; /* Verde vibrante */
+  }
+  
+  /* Estilo de los botones */
+  .button {
+    background-color: #FF6600;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+  }
+  
+  /* Barra de Progreso */
+  .progress-bar-container {
+    display: none;
+    width: 100%;
+    height: 5px;
+    background-color: #e5e7eb;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Estilos del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .qr-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .download-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #FF6600; /* Color vibrante */
+    text-decoration: none;
+  }
+  
+  .download-link:hover {
+    color: #FF4500;
+  }
+  
+  /* Mensaje de éxito */
+  .success-message {
+    background-color: #10b981;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Botón de volver */
+  #backBtn {
+    background-color: #d1d5db;
+    color: #333;
+    font-size: 1em;
+    margin-top: 30px;
+  }
+  
+  /* Animación suave para el modal */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .modal-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
